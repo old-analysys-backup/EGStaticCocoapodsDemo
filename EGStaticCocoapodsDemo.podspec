@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
   s.author       = { "analysys" => "zhiku@analysys.com.cn" }
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/analysys/EGStaticCocoapodsDemo.git", :tag => s.version }
-  s.source_files = "Classes/*.{h,m}"
+  s.public_header_files = "Classes/*.h"
+  s.source_files = "Classes/*.h"
   s.ios.vendored_libraries = "Classes/*.a"
 	s.requires_arc = true
 end
