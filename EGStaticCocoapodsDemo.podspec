@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "EGStaticCocoapodsDemo"
-  s.version      = "1.0"
+  s.version      = "2.0"
   s.summary      = "易观方舟SDK，具体使用方法请参考官方文档：http://dev.analysys.cn/static/html/frontView/doc/sdk.html#ios-h"
   s.homepage     = "https://github.com/analysys/EGStaticCocoapodsDemo"
   s.license      = "MIT"

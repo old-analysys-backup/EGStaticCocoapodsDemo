@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1790877D1E124C3600550DC8 /* libEGMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1790877C1E124C3600550DC8 /* libEGMonitor.a */; };
 		17B19D5C1E10B86B005F33C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B19D5B1E10B86B005F33C0 /* main.m */; };
 		17B19D5F1E10B86B005F33C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B19D5E1E10B86B005F33C0 /* AppDelegate.m */; };
 		17B19D621E10B86B005F33C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B19D611E10B86B005F33C0 /* ViewController.m */; };
 		17B19D651E10B86B005F33C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B19D631E10B86B005F33C0 /* Main.storyboard */; };
 		17B19D671E10B86B005F33C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B19D661E10B86B005F33C0 /* Assets.xcassets */; };
 		17B19D6A1E10B86B005F33C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B19D681E10B86B005F33C0 /* LaunchScreen.storyboard */; };
-		17B19D821E110703005F33C0 /* libtestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B19D811E110703005F33C0 /* libtestLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1790877B1E124C3600550DC8 /* EGMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMonitor.h; sourceTree = "<group>"; };
+		1790877C1E124C3600550DC8 /* libEGMonitor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEGMonitor.a; sourceTree = "<group>"; };
 		17B19D571E10B86B005F33C0 /* EmptyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B19D5B1E10B86B005F33C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B19D5D1E10B86B005F33C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +29,6 @@
 		17B19D661E10B86B005F33C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17B19D691E10B86B005F33C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17B19D6B1E10B86B005F33C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17B19D7B1E10CE93005F33C0 /* StaticlibDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticlibDemo.h; sourceTree = "<group>"; };
-		17B19D811E110703005F33C0 /* libtestLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtestLib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,13 +36,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17B19D821E110703005F33C0 /* libtestLib.a in Frameworks */,
+				1790877D1E124C3600550DC8 /* libEGMonitor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1790877A1E124C3600550DC8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1790877B1E124C3600550DC8 /* EGMonitor.h */,
+				1790877C1E124C3600550DC8 /* libEGMonitor.a */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
 		17B19D4E1E10B86B005F33C0 = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +71,7 @@
 		17B19D591E10B86B005F33C0 /* EmptyProject */ = {
 			isa = PBXGroup;
 			children = (
-				17B19D791E10CE93005F33C0 /* Classes */,
+				1790877A1E124C3600550DC8 /* Classes */,
 				17B19D5D1E10B86B005F33C0 /* AppDelegate.h */,
 				17B19D5E1E10B86B005F33C0 /* AppDelegate.m */,
 				17B19D601E10B86B005F33C0 /* ViewController.h */,
@@ -82,15 +91,6 @@
 				17B19D5B1E10B86B005F33C0 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		17B19D791E10CE93005F33C0 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				17B19D811E110703005F33C0 /* libtestLib.a */,
-				17B19D7B1E10CE93005F33C0 /* StaticlibDemo.h */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
